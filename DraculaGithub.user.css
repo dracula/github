@@ -1,3 +1,14 @@
+/* ==UserStyle==
+@name Github Dracula
+@namespace github.com/Dracula/github
+@homepageURL https://github.com/Dracula/github
+@version 1.0.0
+@updateURL https://github.com/Dracula/github/raw/master/DraculaGithub.user.css
+@description  🧛🏻‍♂️ Dark theme for Github
+@author Umbreon
+@license MIT
+*/
+
 [data-color-mode="light"][data-light-theme="dark"],
 [data-color-mode="dark"][data-dark-theme="dark"] {
     --color-canvas-default-transparent: rgba(13, 17, 23, 0);
