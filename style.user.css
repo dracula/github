@@ -11,6 +11,11 @@
 
 @preprocessor stylus
 @var checkbox purple-topbar "Use purple topbar" 0
+@var checkbox purple-logo "Use purple logo" 0
+
+
+@var checkbox custom-font-enabled "Use custom code font" 0
+@var text custom-font "Custom Font" "FiraCode"
 ==/UserStyle== */
 @-moz-document domain("github.com") {
     /* Replace default github colors */
@@ -67,26 +72,26 @@
         --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
         --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
         --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-        --color-codemirror-text: #c9d1d9;
-        --color-codemirror-bg: #0d1117;
-        --color-codemirror-gutters-bg: #0d1117;
-        --color-codemirror-guttermarker-text: #0d1117;
+        --color-codemirror-text: #F8F8F2;
+        --color-codemirror-bg: #282a36;
+        --color-codemirror-gutters-bg: #282a36;
+        --color-codemirror-guttermarker-text: #282a36;
         --color-codemirror-guttermarker-subtle-text: #484f58;
         --color-codemirror-linenumber-text: #8b949e;
         --color-codemirror-cursor: #c9d1d9;
         --color-codemirror-selection-bg: rgba(56, 139, 253, 0.4);
         --color-codemirror-activeline-bg: rgba(110, 118, 129, 0.1);
         --color-codemirror-matchingbracket-text: #c9d1d9;
-        --color-codemirror-lines-bg: #0d1117;
-        --color-codemirror-syntax-comment: #8b949e;
-        --color-codemirror-syntax-constant: #79c0ff;
-        --color-codemirror-syntax-entity: #d2a8ff;
-        --color-codemirror-syntax-keyword: #ff7b72;
-        --color-codemirror-syntax-storage: #ff7b72;
-        --color-codemirror-syntax-string: #a5d6ff;
-        --color-codemirror-syntax-support: #79c0ff;
-        --color-codemirror-syntax-variable: #ffa657;
-        --color-checks-bg: #010409;
+        --color-codemirror-lines-bg: #282a36;
+        --color-codemirror-syntax-comment: #6272a4;
+        --color-codemirror-syntax-constant: #BD93F9;
+        --color-codemirror-syntax-entity: #FF79C6;
+        --color-codemirror-syntax-keyword: #FF79C6;
+        --color-codemirror-syntax-storage: #FF79C6;
+        --color-codemirror-syntax-string: #F1FA8C;
+        --color-codemirror-syntax-support: #8BE9FD;
+        --color-codemirror-syntax-variable: #F8F8F2;
+        --color-checks-bg: #282a36;
         --color-checks-run-border-width: 1px;
         --color-checks-container-border-width: 1px;
         --color-checks-text-primary: #c9d1d9;
@@ -442,8 +447,17 @@
         background-color: rgba(0, 0, 0, 0);
     }
     
+    /* Custom Code Font */
+    .blob-code-inner {
+        if custom-font-enabled {
+            font-family: custom-font
+        }
+    }
+    
     /* Color the logo */
-    /*.octicon-mark-github {
-        color: #9580ff;
-    }*/
+    .octicon-mark-github {
+        if purple-logo {
+            color: #9580ff;
+        }
+    }
 }
