@@ -224,7 +224,7 @@
         --color-btn-hover-border: #8b949e;
         --color-btn-active-bg: hsla(212, 12%, 18%, 1);
         --color-btn-active-border: #6e7681;
-        --color-btn-selected-bg: #161b22;
+        --color-btn-selected-bg: #282a36;
         --color-btn-focus-bg: #21262d;
         --color-btn-focus-border: #8b949e;
         --color-btn-focus-shadow: 0 0 0 3px rgba(139, 148, 158, 0.3);
@@ -260,7 +260,7 @@
         --color-btn-outline-selected-border: rgba(240, 246, 252, 0.1);
         --color-btn-outline-selected-shadow: 0 0 transparent;
         --color-btn-outline-disabled-text: rgba(88, 166, 255, 0.5);
-        --color-btn-outline-disabled-bg: #0d1117;
+        --color-btn-outline-disabled-bg: #282a36;
         --color-btn-outline-disabled-counter-bg: rgba(31, 111, 235, 0.05);
         --color-btn-outline-focus-border: rgba(240, 246, 252, 0.1);
         --color-btn-outline-focus-shadow: 0 0 0 3px rgba(17, 88, 199, 0.4);
