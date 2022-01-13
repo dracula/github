@@ -1,26 +1,29 @@
 /* ==UserStyle==
 @name Github Dracula
 @namespace https://github.com/Dracula
-@homepageURL https://github.com/Dracula/Github
-@supportURL https://github.com/Dracula/Github/issues
+@homepageURL https://github.com/Dracula/github
+@supportURL https://github.com/Dracula/github/issues
 @version 1.0.0
-@updateURL https://github.com/Dracula/Github/raw/master/style.user.css
+@updateURL https://github.com/Dracula/github/raw/master/style.user.css
 @description  🧛🏻‍♂️ Dark theme for Github
 @author Umbreon
 @license MIT
 
 @preprocessor stylus
-@var checkbox purple-topbar "Use purple topbar" 0
 @var checkbox purple-logo "Use purple logo" 0
-
+@var checkbox purple-topbar "Use purple topbar" 0
+@var checkbox colored-status "Use dracula colors on status badges" 0
 
 @var checkbox custom-font-enabled "Use custom code font" 0
 @var text custom-font "Custom Font" "FiraCode"
 ==/UserStyle== */
 @-moz-document domain("github.com") {
     /* Replace default github colors */
-    [data-color-mode="light"][data-light-theme="dark"],
-    [data-color-mode="dark"][data-dark-theme="dark"] {
+    [data-color-mode="light"][data-light-theme="light"], [data-color-mode="dark"][data-dark-theme="light"], // Light default
+    [data-color-mode="light"][data-light-theme="dark"], [data-color-mode="dark"][data-dark-theme="dark"], // Dark default
+    [data-color-mode="light"][data-light-theme="dark_high_contrast"], [data-color-mode="dark"][data-dark-theme="dark_high_contrast"], // Dark high contrast
+    [data-color-mode="light"][data-light-theme="dark_dimmed"], [data-color-mode="dark"][data-dark-theme="dark_dimmed"] //Dark dimmed
+    {
         --color-canvas-default-transparent: rgba(13, 17, 23, 0);
         --color-page-header-bg: #282a36;
         --color-marketing-icon-primary: #79c0ff;
@@ -164,9 +167,9 @@
         --color-checks-ansi-magenta-bright: #FF92DF;
         --color-checks-ansi-cyan: #8BE9FD;
         --color-checks-ansi-cyan-bright: #A4FFFF;
-        --color-project-header-bg: #0d1117;
-        --color-project-sidebar-bg: #161b22;
-        --color-project-gradient-in: #161b22;
+        --color-project-header-bg: #282a36;
+        --color-project-sidebar-bg: #282a36;
+        --color-project-gradient-in: #282a36;
         --color-project-gradient-out: rgba(22, 27, 34, 0);
         --color-mktg-btn-bg: #f6f8fa;
         --color-mktg-btn-shadow-outline: rgb(255 255 255 / 25%) 0 0 0 1px inset;
@@ -224,14 +227,14 @@
         --color-btn-hover-border: #8b949e;
         --color-btn-active-bg: hsla(212, 12%, 18%, 1);
         --color-btn-active-border: #6e7681;
-        --color-btn-selected-bg: #161b22;
+        --color-btn-selected-bg: #44475a;
         --color-btn-focus-bg: #21262d;
         --color-btn-focus-border: #8b949e;
         --color-btn-focus-shadow: 0 0 0 3px rgba(139, 148, 158, 0.3);
         --color-btn-shadow-active: inset 0 0.15em 0.3em rgba(1, 4, 9, 0.15);
         --color-btn-shadow-input-focus: 0 0 0 0.2em rgba(31, 111, 235, 0.3);
         --color-btn-counter-bg: #30363d;
-        --color-btn-primary-text: #ffffff;
+        --color-btn-primary-text: #000000;
         --color-btn-primary-bg: #9580ff;
         --color-btn-primary-border: rgba(240, 246, 252, 0.1);
         --color-btn-primary-shadow: 0 0 transparent;
@@ -260,7 +263,7 @@
         --color-btn-outline-selected-border: rgba(240, 246, 252, 0.1);
         --color-btn-outline-selected-shadow: 0 0 transparent;
         --color-btn-outline-disabled-text: rgba(88, 166, 255, 0.5);
-        --color-btn-outline-disabled-bg: #0d1117;
+        --color-btn-outline-disabled-bg: #282a36;
         --color-btn-outline-disabled-counter-bg: rgba(31, 111, 235, 0.05);
         --color-btn-outline-focus-border: rgba(240, 246, 252, 0.1);
         --color-btn-outline-focus-shadow: 0 0 0 3px rgba(17, 88, 199, 0.4);
@@ -296,7 +299,6 @@
         --color-fg-default: #f8f8f2;
         --color-fg-muted: #8b949e;
         --color-fg-subtle: #484f58;
-        --color-fg-on-emphasis: #f0f6fc;
         --color-canvas-default: #282a36;
         --color-canvas-overlay: #282a36;
         --color-canvas-inset: #282a36;
@@ -316,28 +318,46 @@
         --color-accent-emphasis: #9580ff;
         --color-accent-muted: rgba(56, 139, 253, 0.4);
         --color-accent-subtle: rgba(56, 139, 253, 0.15);
-        --color-success-fg: #3fb950;
-        --color-success-emphasis: #238636;
+        --color-fg-on-emphasis: #000000;
+        if colored-status {
+            --color-success-fg: #50fa7b;
+            --color-attention-fg: #f1fa8c;
+            --color-severe-fg: #ffb86c;
+            --color-danger-fg: #ff5555;
+            --color-done-fg: #bd93f9;
+            --color-sponsors-fg: #ff79c6;
+            
+            --color-success-emphasis: #50fa7b;
+            --color-attention-emphasis: #f1fa8c;
+            --color-severe-emphasis: #ffb86c;
+            --color-danger-emphasis: #ff5555;
+            --color-done-emphasis: #bd93f9;
+            --color-sponsors-emphasis: #ff79c6;
+        } else {
+            --color-success-fg: #3fb950;
+            --color-attention-fg: #d29922;
+            --color-severe-fg: #db6d28;
+            --color-danger-fg: #f85149;
+            --color-done-fg: #a371f7;
+            --color-sponsors-fg: #db61a2;
+            
+            --color-success-emphasis: #238636;
+            --color-attention-emphasis: #9e6a03;
+            --color-severe-emphasis: #bd561d;
+            --color-danger-emphasis: #da3633;
+            --color-done-emphasis: #8957e5;
+            --color-sponsors-emphasis: #bf4b8a;
+        }
         --color-success-muted: rgba(46, 160, 67, 0.4);
         --color-success-subtle: rgba(46, 160, 67, 0.15);
-        --color-attention-fg: #d29922;
-        --color-attention-emphasis: #9e6a03;
         --color-attention-muted: rgba(187, 128, 9, 0.4);
         --color-attention-subtle: rgba(187, 128, 9, 0.15);
-        --color-severe-fg: #db6d28;
-        --color-severe-emphasis: #bd561d;
         --color-severe-muted: rgba(219, 109, 40, 0.4);
         --color-severe-subtle: rgba(219, 109, 40, 0.15);
-        --color-danger-fg: #f85149;
-        --color-danger-emphasis: #da3633;
         --color-danger-muted: rgba(248, 81, 73, 0.4);
         --color-danger-subtle: rgba(248, 81, 73, 0.15);
-        --color-done-fg: #a371f7;
-        --color-done-emphasis: #8957e5;
         --color-done-muted: rgba(163, 113, 247, 0.4);
         --color-done-subtle: rgba(163, 113, 247, 0.15);
-        --color-sponsors-fg: #db61a2;
-        --color-sponsors-emphasis: #bf4b8a;
         --color-sponsors-muted: rgba(219, 97, 162, 0.4);
         --color-sponsors-subtle: rgba(219, 97, 162, 0.15);
         --color-primer-fg-disabled: #484f58;
@@ -347,7 +367,7 @@
         --color-primer-border-contrast: rgba(240, 246, 252, 0.2);
         --color-primer-shadow-highlight: 0 0 transparent;
         --color-primer-shadow-inset: 0 0 transparent;
-        --color-primer-shadow-focus: 0 0 0 3px #0c2d6b;
+        --color-primer-shadow-focus: 0 0 0 3px transparent;
         --color-scale-black: #010409;
         --color-scale-white: #f0f6fc;
         --color-scale-gray-0: #f0f6fc;
@@ -440,12 +460,7 @@
         --color-scale-coral-7: #872012;
         --color-scale-coral-8: #640D04;
         --color-scale-coral-9: #460701;
-    }
-
-    /* Fix Color on SideNav's for consistency */
-    .SideNav {
-        background-color: rgba(0, 0, 0, 0);
-    }
+    }    
     
     /* Custom Code Font */
     .blob-code-inner {
@@ -458,6 +473,19 @@
     .octicon-mark-github {
         if purple-logo {
             color: #9580ff;
+        }
+    }
+    
+    /* Fix Color on SideNav's for consistency */
+    .SideNav {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .State {
+        if revert-icon-colors {
+            color: #ffffff
+        } else {
+            
         }
     }
 }
