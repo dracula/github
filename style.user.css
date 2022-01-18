@@ -13,17 +13,26 @@
 @var checkbox purple-logo "Use purple logo" 0
 @var checkbox purple-topbar "Use purple topbar" 0
 @var checkbox colored-status "Use dracula colors on status badges" 0
+@var checkbox black-btn-text "Use black text on colored buttons" 0
 
 @var checkbox custom-font-enabled "Use custom code font" 0
 @var text custom-font "Custom Font" "FiraCode"
 ==/UserStyle== */
+/* Styles 
+Rounded input
+background-color: draculaW-blackSecondary
+
+*/
 @-moz-document domain("github.com") {
     /* Replace default github colors */
-    [data-color-mode="light"][data-light-theme="light"], [data-color-mode="dark"][data-dark-theme="light"], // Light default
-    [data-color-mode="light"][data-light-theme="dark"], [data-color-mode="dark"][data-dark-theme="dark"], // Dark default
-    [data-color-mode="light"][data-light-theme="dark_high_contrast"], [data-color-mode="dark"][data-dark-theme="dark_high_contrast"], // Dark high contrast
-    [data-color-mode="light"][data-light-theme="dark_dimmed"], [data-color-mode="dark"][data-dark-theme="dark_dimmed"] //Dark dimmed
-    {
+    [data-color-mode="light"][data-light-theme="light"], // Light default
+    [data-color-mode="dark"][data-dark-theme="light"],
+    [data-color-mode="light"][data-light-theme="dark"], // Dark default
+    [data-color-mode="dark"][data-dark-theme="dark"],
+    [data-color-mode="light"][data-light-theme="dark_high_contrast"], // Dark high contrast
+    [data-color-mode="dark"][data-dark-theme="dark_high_contrast"],
+    [data-color-mode="light"][data-light-theme="dark_dimmed"], //Dark dimmed
+    [data-color-mode="dark"][data-dark-theme="dark_dimmed"] {
         --color-canvas-default-transparent: rgba(13, 17, 23, 0);
         --color-page-header-bg: #282a36;
         --color-marketing-icon-primary: #79c0ff;
@@ -103,17 +112,17 @@
         --color-checks-btn-icon: #8b949e;
         --color-checks-btn-hover-icon: #c9d1d9;
         --color-checks-btn-hover-bg: rgba(110, 118, 129, 0.1);
-        --color-checks-input-text: #8b949e;
+        --color-checks-input-text: #f8f8f2;
         --color-checks-input-placeholder-text: #484f58;
         --color-checks-input-focus-text: #c9d1d9;
-        --color-checks-input-bg: #161b22;
+        --color-checks-input-bg: #44475a;
         --color-checks-input-shadow: 0 0 0 1px;
         --color-checks-donut-error: #f85149;
         --color-checks-donut-pending: #d29922;
         --color-checks-donut-success: #2ea043;
         --color-checks-donut-neutral: #8b949e;
         --color-checks-dropdown-text: #c9d1d9;
-        --color-checks-dropdown-bg: #161b22;
+        --color-checks-dropdown-bg: #44475a;
         --color-checks-dropdown-border: #30363d;
         --color-checks-dropdown-shadow: rgba(1, 4, 9, 0.3);
         --color-checks-dropdown-hover-text: #c9d1d9;
@@ -136,7 +145,7 @@
         --color-checks-gate-bg: rgba(187, 128, 9, 0.15);
         --color-checks-gate-text: #8b949e;
         --color-checks-gate-waiting-text: #d29922;
-        --color-checks-step-header-open-bg: #161b22;
+        --color-checks-step-header-open-bg: #44475a;
         --color-checks-step-error-text: #f85149;
         --color-checks-step-warning-text: #d29922;
         --color-checks-logline-text: #8b949e;
@@ -150,7 +159,7 @@
         --color-checks-logline-warning-bg: rgba(187, 128, 9, 0.15);
         --color-checks-logline-command-text: #58a6ff;
         --color-checks-logline-section-text: #3fb950;
-        --color-checks-ansi-black: #21222C;
+        --color-checks-ansi-black: #282a36;
         --color-checks-ansi-black-bright: #6272A4;
         --color-checks-ansi-white: #F8F8F2;
         --color-checks-ansi-white-bright: #FFFFFF;
@@ -190,7 +199,8 @@
         --color-header-text: rgba(240, 246, 252, 0.7);
         if (purple-topbar) {
             --color-header-bg: #383a59;
-        } else {
+        }
+        else {
             --color-header-bg: #282a36;
         }
         --color-header-divider: #8b949e;
@@ -200,7 +210,7 @@
         --color-sidenav-selected-bg: #323543;
         --color-menu-bg-active: #323543;
         --color-input-disabled-bg: rgba(110, 118, 129, 0);
-        --color-timeline-badge-bg: #21262d;
+        --color-timeline-badge-bg: #323543;
         --color-ansi-black: #484f58;
         --color-ansi-black-bright: #6e7681;
         --color-ansi-white: #b1bac4;
@@ -234,22 +244,21 @@
         --color-btn-shadow-active: inset 0 0.15em 0.3em rgba(1, 4, 9, 0.15);
         --color-btn-shadow-input-focus: 0 0 0 0.2em rgba(31, 111, 235, 0.3);
         --color-btn-counter-bg: #30363d;
-        --color-btn-primary-text: #000000;
-        --color-btn-primary-bg: #9580ff;
-        --color-btn-primary-border: rgba(240, 246, 252, 0.1);
+        --color-btn-primary-bg: transparent;
+        --color-btn-primary-border: #bd93f9;
         --color-btn-primary-shadow: 0 0 transparent;
         --color-btn-primary-inset-shadow: 0 0 transparent;
-        --color-btn-primary-hover-bg: rgba(149, 128, 255, 0.8);
-        --color-btn-primary-hover-border: rgba(240, 246, 252, 0.1);
-        --color-btn-primary-selected-bg: #238636;
+        --color-btn-primary-hover-bg: #bd93f91a;
+        --color-btn-primary-hover-border: #bd93f9;
+        --color-btn-primary-selected-bg: #bd93f91a;
         --color-btn-primary-selected-shadow: 0 0 transparent;
-        --color-btn-primary-disabled-text: rgba(240, 246, 252, 0.5);
-        --color-btn-primary-disabled-bg: rgba(149, 128, 255, 0.6);
-        --color-btn-primary-disabled-border: rgba(240, 246, 252, 0.1);
-        --color-btn-primary-focus-bg: rgba(149, 128, 255, 0.6);
-        --color-btn-primary-focus-border: rgba(240, 246, 252, 0.1);
-        --color-btn-primary-focus-shadow: 0 0 0 3px rgba(46, 164, 79, 0.4);
-        --color-btn-primary-icon: #f0f6fc;
+        --color-btn-primary-disabled-text: #6D7392;
+        --color-btn-primary-disabled-bg: transparent;
+        --color-btn-primary-disabled-border: #6D7392;
+        --color-btn-primary-focus-bg: #bd93f91a;
+        --color-btn-primary-focus-border: #bd93f9;
+        --color-btn-primary-focus-shadow: 0 0 0 3px rgba(149, 128, 255, 0.4);
+        --color-btn-primary-icon: #bd93f9;
         --color-btn-primary-counter-bg: rgba(240, 246, 252, 0.2);
         --color-btn-outline-text: #58a6ff;
         --color-btn-outline-hover-text: #58a6ff;
@@ -315,10 +324,17 @@
         --color-neutral-muted: rgba(110, 118, 129, 0.4);
         --color-neutral-subtle: rgba(110, 118, 129, 0.1);
         --color-accent-fg: #58a6ff;
-        --color-accent-emphasis: #9580ff;
+        --color-accent-emphasis: #bd93f9;
         --color-accent-muted: rgba(56, 139, 253, 0.4);
         --color-accent-subtle: rgba(56, 139, 253, 0.15);
-        --color-fg-on-emphasis: #000000;
+        if black-btn-text {
+            --color-fg-on-emphasis: #000000;
+            --color-btn-primary-text: #000000;
+        }
+        else {
+            --color-fg-on-emphasis: #f0f6fc;
+            --color-btn-primary-text: #bd93f9;
+        }
         if colored-status {
             --color-success-fg: #50fa7b;
             --color-attention-fg: #f1fa8c;
@@ -326,21 +342,22 @@
             --color-danger-fg: #ff5555;
             --color-done-fg: #bd93f9;
             --color-sponsors-fg: #ff79c6;
-            
-            --color-success-emphasis: #50fa7b;
-            --color-attention-emphasis: #f1fa8c;
-            --color-severe-emphasis: #ffb86c;
-            --color-danger-emphasis: #ff5555;
-            --color-done-emphasis: #bd93f9;
-            --color-sponsors-emphasis: #ff79c6;
-        } else {
+
+            --color-success-emphasis: #50fa7b1a;
+            --color-attention-emphasis: #f1fa8c1a;
+            --color-severe-emphasis: #ffb86c1a;
+            --color-danger-emphasis: #ff55551a;
+            --color-done-emphasis: #bd93f91a;
+            --color-sponsors-emphasis: #ff79c61a;
+        }
+        else {
             --color-success-fg: #3fb950;
             --color-attention-fg: #d29922;
             --color-severe-fg: #db6d28;
             --color-danger-fg: #f85149;
             --color-done-fg: #a371f7;
             --color-sponsors-fg: #db61a2;
-            
+
             --color-success-emphasis: #238636;
             --color-attention-emphasis: #9e6a03;
             --color-severe-emphasis: #bd561d;
@@ -363,7 +380,7 @@
         --color-primer-fg-disabled: #484f58;
         --color-primer-canvas-backdrop: rgba(1, 4, 9, 0.8);
         --color-primer-canvas-sticky: rgba(13, 17, 23, 0.95);
-        --color-primer-border-active: #9580ff;
+        --color-primer-border-active: #bd93f9;
         --color-primer-border-contrast: rgba(240, 246, 252, 0.2);
         --color-primer-shadow-highlight: 0 0 transparent;
         --color-primer-shadow-inset: 0 0 transparent;
@@ -460,32 +477,96 @@
         --color-scale-coral-7: #872012;
         --color-scale-coral-8: #640D04;
         --color-scale-coral-9: #460701;
-    }    
-    
+    }
+
+    .TimelineItem-badge {
+        border: transparent;
+    }
+
+    .dropdown-item:focus,
+    .dropdown-item:hover,
+    .jump-to-suggestions-results-container [aria-selected="true"] .jump-to-suggestions-path,
+    .jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path,
+    .subnav-item.selected,
+    .subnav-item[aria-selected="true"],
+    .subnav-item[aria-current]:not([aria-current="false"]),
+    .filter-item.selected,
+    .filter-item[aria-selected="true"],
+    .filter-item[aria-current]:not([aria-current="false"]) {
+        background-color: #bd93f91A;
+        color: #bd93f9;
+    }
+
+    .jump-to-suggestions-results-container [aria-selected="true"] mark,
+    .jump-to-suggestions-results-container .navigation-focus mark {
+        color: #bd93f9;
+    }
+
+    /* Fix the border of the color when active */
+    .btn-primary:active {
+        border-color: var(--color-btn-primary-border);
+    }
+
     /* Custom Code Font */
     .blob-code-inner {
         if custom-font-enabled {
-            font-family: custom-font
+            font-family: custom-font;
         }
     }
-    
+
     /* Color the logo */
     .octicon-mark-github {
         if purple-logo {
-            color: #9580ff;
+            color: #bd93f9;
         }
     }
-    
+
     /* Fix Color on SideNav's for consistency */
     .SideNav {
         background-color: rgba(0, 0, 0, 0);
     }
-    
-    .State {
-        if revert-icon-colors {
-            color: #ffffff
-        } else {
-            
+
+    /* Fix the background behind some buttons */
+    .color-bg-subtle.ml-1 {
+        background-color: transparent !important;
+    }
+
+    /* Improve labels when colored status is enabled */
+    if colored-status {
+        .State--draft {}
+        .State--open {
+            color: #50fa7b;
+        }
+        .State--merged {
+            color: #bd93f9;
+        }
+        .State--closed {
+            color: #ff5555;
+        }
+
+        .Label--info,
+        .Label--accent {
+            background-color: #58a6ff09;
+        }
+        .Label--success {
+            background-color: #50fa7b09;
+        }
+
+        .Label--warning,
+        .Label--attention {
+            background-color: #f1fa8c09;
+        }
+        .Label--severe {
+            background-color: #db6d2809;
+        }
+        .Label--danger {
+            background-color: #f8514909;
+        }
+        .Label--done {
+            background-color: #a371f709;
+        }
+        .Label--sponsors {
+            background-color: #db61a209;
         }
     }
 }
