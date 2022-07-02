@@ -17,8 +17,12 @@
 
 @var checkbox custom-font-enabled "Use custom code font" 0
 @var text custom-font "Custom Font" "FiraCode"
+@var text custom-font-size "Custom Font Size" "14px"
+@var number custom-font-weight "Custom Font Weight" 400
+@var number custom-line-height "Custom Line Height" 0
+
 ==/UserStyle== */
-/* Styles 
+/* Styles
 Rounded input
 background-color: draculaW-blackSecondary
 
@@ -514,6 +518,13 @@ background-color: draculaW-blackSecondary
         if custom-font-enabled {
             font-family: custom-font;
         }
+        if custom-line-height > 0 {
+            line-height: custom-line-height;
+        }
+        if custom-font-weight >= 100 && custom-font-weight <= 900 {
+            font-weight: custom-font-weight;
+        }
+        font-size: custom-font-size;
     }
 
     /* Color the logo */
