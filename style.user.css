@@ -26,7 +26,9 @@ background-color: draculaW-blackSecondary
 @-moz-document domain("github.com") {
     /* Replace default github colors. Need the attributes here to match the specificity of the default values. */
     html[data-color-mode][data-light-theme],
-    html[data-color-mode][data-light-theme] body {
+    html[data-color-mode][data-dark-theme],
+    html[data-color-mode][data-light-theme] body,
+    html[data-color-mode][data-dark-theme] body {
         --color-canvas-default-transparent: rgba(13, 17, 23, 0);
         --color-page-header-bg: #282a36;
         --color-marketing-icon-primary: #79c0ff;
