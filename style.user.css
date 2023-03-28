@@ -24,17 +24,9 @@ background-color: draculaW-blackSecondary
 
 */
 @-moz-document domain("github.com") {
-    /* Replace default github colors */
-    [data-color-mode="light"][data-light-theme="light"] body, // Light default
-    [data-color-mode="dark"][data-dark-theme="light"] body,
-    [data-color-mode="light"][data-light-theme="dark"] body, // Dark default
-    [data-color-mode="dark"][data-dark-theme="dark"] body,
-    [data-color-mode="light"][data-light-theme="dark_high_contrast"] body, // Dark high contrast
-    [data-color-mode="dark"][data-dark-theme="dark_high_contrast"] body,
-    [data-color-mode="light"][data-light-theme="dark_dimmed"] body, // Dark dimmed
-    [data-color-mode="dark"][data-dark-theme="dark_dimmed"] body,
-    [data-color-mode=auto][data-light-theme*=light] body, // Auto colors
-    [data-color-mode=auto][data-light-theme*=dark] body {
+    /* Replace default github colors. Need the attributes here to match the specificity of the default values. */
+    html[data-color-mode][data-light-theme],
+    html[data-color-mode][data-light-theme] body {
         --color-canvas-default-transparent: rgba(13, 17, 23, 0);
         --color-page-header-bg: #282a36;
         --color-marketing-icon-primary: #79c0ff;
