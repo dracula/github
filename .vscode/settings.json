@@ -1,4 +1,7 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.configPath": "./.prettierrc.json"
+  "prettier.configPath": "./.prettierrc.json",
+  "files.associations": {
+    "style.user.css": "stylus"
+  }
 }
