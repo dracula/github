@@ -50,20 +50,20 @@ background-color: draculaW-blackSecondary
         --color-diffstat-addition-border: rgba(240, 246, 252, 0.1);
         --color-diffstat-addition-bg: #3fb950;
         --color-search-keyword-hl: rgba(210, 153, 34, 0.4);
-        --color-prettylights-syntax-comment: #6272A4;
-        --color-prettylights-syntax-constant: #BD93F9;
-        --color-prettylights-syntax-entity: #50FA7B;
-        --color-prettylights-syntax-storage-modifier-import: #FF79C6;
-        --color-prettylights-syntax-entity-tag: #FF79C6;
-        --color-prettylights-syntax-keyword: #FF79C6;
-        --color-prettylights-syntax-string: #F1FA8C;
-        --color-prettylights-syntax-variable: #F8F8F2;
-        --color-prettylights-syntax-brackethighlighter-unmatched: #FF5555;
-        --color-prettylights-syntax-invalid-illegal-text: #F8F8F2;
-        --color-prettylights-syntax-invalid-illegal-bg: #FF5555;
+        --color-prettylights-syntax-comment: #6272a4;
+        --color-prettylights-syntax-constant: #bd93f9;
+        --color-prettylights-syntax-entity: #50fa7b;
+        --color-prettylights-syntax-storage-modifier-import: #ff79c6;
+        --color-prettylights-syntax-entity-tag: #ff79c6;
+        --color-prettylights-syntax-keyword: #ff79c6;
+        --color-prettylights-syntax-string: #f1fa8c;
+        --color-prettylights-syntax-variable: #f8f8f2;
+        --color-prettylights-syntax-brackethighlighter-unmatched: #ff5555;
+        --color-prettylights-syntax-invalid-illegal-text: #f8f8f2;
+        --color-prettylights-syntax-invalid-illegal-bg: #ff5555;
         --color-prettylights-syntax-carriage-return-text: #f0f6fc;
         --color-prettylights-syntax-carriage-return-bg: #b62324;
-        --color-prettylights-syntax-string-regexp: #FF5555;
+        --color-prettylights-syntax-string-regexp: #ff5555;
         --color-prettylights-syntax-markup-list: #f2cc60;
         --color-prettylights-syntax-markup-heading: #1f6feb;
         --color-prettylights-syntax-markup-italic: #c9d1d9;
@@ -80,7 +80,7 @@ background-color: draculaW-blackSecondary
         --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
         --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
         --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-        --color-codemirror-text: #F8F8F2;
+        --color-codemirror-text: #f8f8f2;
         --color-codemirror-bg: #282a36;
         --color-codemirror-gutters-bg: #282a36;
         --color-codemirror-guttermarker-text: #282a36;
@@ -92,13 +92,13 @@ background-color: draculaW-blackSecondary
         --color-codemirror-matchingbracket-text: #c9d1d9;
         --color-codemirror-lines-bg: #282a36;
         --color-codemirror-syntax-comment: #6272a4;
-        --color-codemirror-syntax-constant: #BD93F9;
-        --color-codemirror-syntax-entity: #FF79C6;
-        --color-codemirror-syntax-keyword: #FF79C6;
-        --color-codemirror-syntax-storage: #FF79C6;
-        --color-codemirror-syntax-string: #F1FA8C;
-        --color-codemirror-syntax-support: #8BE9FD;
-        --color-codemirror-syntax-variable: #F8F8F2;
+        --color-codemirror-syntax-constant: #bd93f9;
+        --color-codemirror-syntax-entity: #ff79c6;
+        --color-codemirror-syntax-keyword: #ff79c6;
+        --color-codemirror-syntax-storage: #ff79c6;
+        --color-codemirror-syntax-string: #f1fa8c;
+        --color-codemirror-syntax-support: #8be9fd;
+        --color-codemirror-syntax-variable: #f8f8f2;
         --color-checks-bg: #282a36;
         --color-checks-run-border-width: 1px;
         --color-checks-container-border-width: 1px;
@@ -156,22 +156,22 @@ background-color: draculaW-blackSecondary
         --color-checks-logline-command-text: #58a6ff;
         --color-checks-logline-section-text: #3fb950;
         --color-checks-ansi-black: #282a36;
-        --color-checks-ansi-black-bright: #6272A4;
-        --color-checks-ansi-white: #F8F8F2;
-        --color-checks-ansi-white-bright: #FFFFFF;
+        --color-checks-ansi-black-bright: #6272a4;
+        --color-checks-ansi-white: #f8f8f2;
+        --color-checks-ansi-white-bright: #ffffff;
         --color-checks-ansi-gray: #6e7681;
-        --color-checks-ansi-red: #FF5555;
-        --color-checks-ansi-red-bright: #FF6E6E;
-        --color-checks-ansi-green: #50FA7B;
-        --color-checks-ansi-green-bright: #69FF94;
-        --color-checks-ansi-yellow: #F1FA8C;
-        --color-checks-ansi-yellow-bright: #FFFFA5;
-        --color-checks-ansi-blue: #BD93F9;
-        --color-checks-ansi-blue-bright: #D6ACFF;
-        --color-checks-ansi-magenta: #FF79C6;
-        --color-checks-ansi-magenta-bright: #FF92DF;
-        --color-checks-ansi-cyan: #8BE9FD;
-        --color-checks-ansi-cyan-bright: #A4FFFF;
+        --color-checks-ansi-red: #ff5555;
+        --color-checks-ansi-red-bright: #ff6e6e;
+        --color-checks-ansi-green: #50fa7b;
+        --color-checks-ansi-green-bright: #69ff94;
+        --color-checks-ansi-yellow: #f1fa8c;
+        --color-checks-ansi-yellow-bright: #ffffa5;
+        --color-checks-ansi-blue: #bd93f9;
+        --color-checks-ansi-blue-bright: #d6acff;
+        --color-checks-ansi-magenta: #ff79c6;
+        --color-checks-ansi-magenta-bright: #ff92df;
+        --color-checks-ansi-cyan: #8be9fd;
+        --color-checks-ansi-cyan-bright: #a4ffff;
         --color-project-header-bg: #282a36;
         --color-project-sidebar-bg: #282a36;
         --color-project-gradient-in: #282a36;
@@ -179,7 +179,10 @@ background-color: draculaW-blackSecondary
         --color-mktg-btn-bg: #f6f8fa;
         --color-mktg-btn-shadow-outline: rgb(255 255 255 / 25%) 0 0 0 1px inset;
         --color-mktg-btn-shadow-focus: rgb(255 255 255 / 25%) 0 0 0 4px;
-        --color-mktg-btn-shadow-hover: 0 4px 7px rgba(0, 0, 0, 0.15), 0 100px 80px rgba(255, 255, 255, 0.02), 0 42px 33px rgba(255, 255, 255, 0.024), 0 22px 18px rgba(255, 255, 255, 0.028), 0 12px 10px rgba(255, 255, 255, 0.034), 0 7px 5px rgba(255, 255, 255, 0.04), 0 3px 2px rgba(255, 255, 255, 0.07);
+        --color-mktg-btn-shadow-hover: 0 4px 7px rgba(0, 0, 0, 0.15),
+            0 100px 80px rgba(255, 255, 255, 0.02), 0 42px 33px rgba(255, 255, 255, 0.024),
+            0 22px 18px rgba(255, 255, 255, 0.028), 0 12px 10px rgba(255, 255, 255, 0.034),
+            0 7px 5px rgba(255, 255, 255, 0.04), 0 3px 2px rgba(255, 255, 255, 0.07);
         --color-mktg-btn-shadow-hover-muted: rgb(255 255 255) 0 0 0 2px inset;
         --color-avatar-bg: rgba(240, 246, 252, 0.1);
         --color-avatar-border: rgba(240, 246, 252, 0.1);
@@ -248,9 +251,9 @@ background-color: draculaW-blackSecondary
         --color-btn-primary-hover-border: #bd93f9;
         --color-btn-primary-selected-bg: #bd93f91a;
         --color-btn-primary-selected-shadow: 0 0 transparent;
-        --color-btn-primary-disabled-text: #6D7392;
+        --color-btn-primary-disabled-text: #6d7392;
         --color-btn-primary-disabled-bg: transparent;
-        --color-btn-primary-disabled-border: #6D7392;
+        --color-btn-primary-disabled-border: #6d7392;
         --color-btn-primary-focus-bg: #bd93f91a;
         --color-btn-primary-focus-border: #bd93f9;
         --color-btn-primary-focus-shadow: 0 0 0 3px rgba(149, 128, 255, 0.4);
@@ -463,15 +466,15 @@ background-color: draculaW-blackSecondary
         --color-scale-pink-7: #7d2457;
         --color-scale-pink-8: #5e103e;
         --color-scale-pink-9: #42062a;
-        --color-scale-coral-0: #FFDDD2;
-        --color-scale-coral-1: #FFC2B2;
-        --color-scale-coral-2: #FFA28B;
-        --color-scale-coral-3: #F78166;
-        --color-scale-coral-4: #EA6045;
-        --color-scale-coral-5: #CF462D;
-        --color-scale-coral-6: #AC3220;
+        --color-scale-coral-0: #ffddd2;
+        --color-scale-coral-1: #ffc2b2;
+        --color-scale-coral-2: #ffa28b;
+        --color-scale-coral-3: #f78166;
+        --color-scale-coral-4: #ea6045;
+        --color-scale-coral-5: #cf462d;
+        --color-scale-coral-6: #ac3220;
         --color-scale-coral-7: #872012;
-        --color-scale-coral-8: #640D04;
+        --color-scale-coral-8: #640d04;
         --color-scale-coral-9: #460701;
     }
 
@@ -489,7 +492,7 @@ background-color: draculaW-blackSecondary
     .filter-item.selected,
     .filter-item[aria-selected="true"],
     .filter-item[aria-current]:not([aria-current="false"]) {
-        background-color: #bd93f91A;
+        background-color: #bd93f91a;
         color: #bd93f9;
     }
 
@@ -529,7 +532,8 @@ background-color: draculaW-blackSecondary
 
     /* Improve labels when colored status is enabled */
     if colored-status {
-        .State--draft {}
+        .State--draft {
+        }
         .State--open {
             color: #50fa7b;
         }
