@@ -15,7 +15,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Check code style
-        uses: creyD/prettier_action@v4.2
+        uses: creyD/prettier_action@v4
         with:
           dry: true
           prettier_options: --check style.user.css
