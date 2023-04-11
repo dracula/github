@@ -3,7 +3,7 @@
 @namespace https://github.com/Dracula
 @homepageURL https://github.com/Dracula/github
 @supportURL https://github.com/Dracula/github/issues
-@version 1.1.3
+@version 1.1.4
 @updateURL https://github.com/Dracula/github/raw/master/style.user.css
 @description  🧛🏻‍♂️ Dark theme for Github
 @author Umbreon
@@ -14,6 +14,7 @@
 @var checkbox purple-topbar "Use purple topbar" 0
 @var checkbox colored-status "Use dracula colors on status badges" 0
 @var checkbox black-btn-text "Use black text on colored buttons" 0
+@var checkbox contributor-graph-colors "Use dracula colors for profile contributor graphs" 0
 
 @var checkbox custom-font-enabled "Use custom code font" 0
 @var text custom-font "Custom Font" "FiraCode"
@@ -476,11 +477,13 @@ background-color: draculaW-blackSecondary
     --color-scale-coral-7: #872012;
     --color-scale-coral-8: #640d04;
     --color-scale-coral-9: #460701;
-    --color-calendar-graph-day-bg: #44475a;
-    --color-calendar-graph-day-L1-bg: #6272a4;
-    --color-calendar-graph-day-L2-bg: #8be9fd;
-    --color-calendar-graph-day-L3-bg: #bd93f9;
-    --color-calendar-graph-day-L4-bg: #ff79c6;
+    if contributor-graph-colors {
+      --color-calendar-graph-day-bg: #44475a;
+      --color-calendar-graph-day-L1-bg: #6272a4;
+      --color-calendar-graph-day-L2-bg: #8be9fd;
+      --color-calendar-graph-day-L3-bg: #bd93f9;
+      --color-calendar-graph-day-L4-bg: #ff79c6;
+    }
   }
 
   .TimelineItem-badge {
@@ -537,8 +540,6 @@ background-color: draculaW-blackSecondary
 
   /* Improve labels when colored status is enabled */
   if colored-status {
-    .State--draft {
-    }
     .State--open {
       color: #50fa7b;
     }
