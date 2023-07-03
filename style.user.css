@@ -28,8 +28,7 @@ background-color: draculaW-blackSecondary
   /* Replace default github colors. Need the attributes here to match the specificity of the default values. */
   [data-color-mode][data-dark-theme],
   html[data-color-mode][data-dark-theme],
-  html[data-color-mode][data-dark-theme] body, {
-    
+  html[data-color-mode][data-dark-theme] body {
     --color-canvas-default-transparent: rgba(13, 17, 23, 0);
     --color-page-header-bg: #282a36;
     --color-marketing-icon-primary: #79c0ff;
