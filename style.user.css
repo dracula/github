@@ -3,7 +3,7 @@
 @namespace https://github.com/Dracula
 @homepageURL https://github.com/Dracula/github
 @supportURL https://github.com/Dracula/github/issues
-@version 1.1.4
+@version 1.1.5
 @updateURL https://github.com/Dracula/github/raw/master/style.user.css
 @description  🧛🏻‍♂️ Dark theme for Github
 @author Umbreon
@@ -14,7 +14,7 @@
 @var checkbox purple-topbar "Use purple topbar" 0
 @var checkbox colored-status "Use dracula colors on status badges" 0
 @var checkbox black-btn-text "Use black text on colored buttons" 0
-@var checkbox contributor-graph-colors "Use dracula colors for profile contributor graphs" 0
+@var checkbox contributor-graph-colors "Use dracula colors for profile contributor graphs" 1
 
 @var checkbox custom-font-enabled "Use custom code font" 0
 @var text custom-font "Custom Font" "FiraCode"
@@ -26,9 +26,8 @@ background-color: draculaW-blackSecondary
 */
 @-moz-document domain("github.com") {
   /* Replace default github colors. Need the attributes here to match the specificity of the default values. */
-  html[data-color-mode][data-light-theme],
+  [data-color-mode][data-dark-theme],
   html[data-color-mode][data-dark-theme],
-  html[data-color-mode][data-light-theme] body,
   html[data-color-mode][data-dark-theme] body {
     --color-canvas-default-transparent: rgba(13, 17, 23, 0);
     --color-page-header-bg: #282a36;
