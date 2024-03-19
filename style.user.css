@@ -483,7 +483,7 @@ background-color: draculaW-blackSecondary
       --color-calendar-graph-day-L3-bg: #bd93f9;
       --color-calendar-graph-day-L4-bg: #ff79c6;
     }
-    
+
     /*
         Update 2024-03-19: GitHub has seemingly changed a bunch of the variable names.
         The styles use fallbacks to the old variable names, which I have used to generate the mappings
