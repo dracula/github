@@ -3,7 +3,7 @@
 @namespace https://github.com/Dracula
 @homepageURL https://github.com/Dracula/github
 @supportURL https://github.com/Dracula/github/issues
-@version 1.1.5
+@version 1.1.6
 @updateURL https://github.com/Dracula/github/raw/master/style.user.css
 @description  🧛🏻‍♂️ Dark theme for Github
 @author Umbreon
@@ -483,6 +483,206 @@ background-color: draculaW-blackSecondary
       --color-calendar-graph-day-L3-bg: #bd93f9;
       --color-calendar-graph-day-L4-bg: #ff79c6;
     }
+    
+    /*
+        Update 2024-03-19: GitHub has seemingly changed a bunch of the variable names.
+        The styles use fallbacks to the old variable names, which I have used to generate the mappings
+        below to ensure everything will be styled like before. In the future,
+        we may want to fully swap out the variables above instead.
+    */
+
+    --codeMirror-fgColor: var(--color-codemirror-text);
+    --codeMirror-bgColor: var(--color-codemirror-bg);
+    --codeMirror-gutters-bgColor: var(--color-codemirror-gutters-bg);
+    --codeMirror-gutterMarker-fgColor-default: var(--color-codemirror-guttermarker-text);
+    --codeMirror-gutterMarker-fgColor-muted: var(--color-codemirror-guttermarker-subtle-text);
+    --codeMirror-lineNumber-fgColor: var(--color-codemirror-linenumber-text);
+    --codeMirror-cursor-fgColor: var(--color-codemirror-cursor);
+    --codeMirror-activeline-bgColor: var(--color-codemirror-activeline-bg);
+    --codeMirror-matchingBracket-fgColor: var(--color-codemirror-matchingbracket-text);
+    --codeMirror-lines-bgColor: var(--color-codemirror-lines-bg);
+    --codeMirror-syntax-fgColor-comment: var(--color-codemirror-syntax-comment);
+    --codeMirror-syntax-fgColor-constant: var(--color-codemirror-syntax-constant);
+    --codeMirror-syntax-fgColor-entity: var(--color-codemirror-syntax-entity);
+    --codeMirror-syntax-fgColor-keyword: var(--color-codemirror-syntax-keyword);
+    --codeMirror-syntax-fgColor-storage: var(--color-codemirror-syntax-storage);
+    --codeMirror-syntax-fgColor-string: var(--color-codemirror-syntax-string);
+    --codeMirror-syntax-fgColor-support: var(--color-codemirror-syntax-support);
+    --codeMirror-syntax-fgColor-variable: var(--color-codemirror-syntax-variable);
+    --fgColor-onEmphasis: var(--color-fg-on-emphasis);
+    --bgColor-neutral-muted: var(--color-neutral-muted);
+    --fgColor-muted: var(--color-fg-muted);
+    --fgColor-default: var(--color-fg-default);
+    --fgColor-severe: var(--color-severe-fg);
+    --borderColor-severe-emphasis: var(--color-severe-emphasis);
+    --fgColor-done: var(--color-done-fg);
+    --borderColor-done-emphasis: var(--color-done-emphasis);
+    --fgColor-sponsors: var(--color-sponsors-fg);
+    --borderColor-sponsors-emphasis: var(--color-sponsors-emphasis);
+    --fgColor-success: var(--color-success-fg);
+    --fgColor-danger: var(--color-danger-fg);
+    --fgColor-attention: var(--color-attention-fg);
+    --bgColor-muted: var(--color-canvas-subtle);
+    --borderColor-default: var(--color-border-default);
+    --bgColor-default: var(--color-canvas-default);
+    --bgColor-danger-emphasis: var(--color-danger-emphasis);
+    --borderColor-muted: var(--color-border-muted);
+    --shadow-resting-medium: var(--color-shadow-medium);
+    --bgColor-accent-emphasis: var(--color-accent-emphasis);
+    --borderColor-danger-emphasis: var(--color-danger-emphasis);
+    --borderColor-attention-emphasis: var(--color-attention-emphasis);
+    --borderColor-accent-emphasis: var(--color-accent-emphasis);
+    --bgColor-attention-emphasis: var(--color-attention-emphasis);
+    --bgColor-neutral-emphasis: var(--color-neutral-emphasis);
+    --bgColor-success-emphasis: var(--color-success-emphasis);
+    --fgColor-accent: var(--color-accent-fg);
+    --borderColor-attention-muted: var(--color-attention-muted);
+    --bgColor-attention-muted: var(--color-attention-subtle);
+    --overlay-bgColor: var(--color-canvas-overlay);
+    --button-default-bgColor-hover: var(--color-btn-hover-bg);
+    --fgColor-neutral: var(--color-neutral-emphasis);
+    --focus-outlineColor: var(--color-accent-emphasis);
+    --bgColor-emphasis: var(--color-neutral-emphasis-plus);
+    --borderColor-neutral-muted: var(--color-neutral-muted);
+    --borderColor-success-emphasis: var(--color-success-emphasis);
+    --page-header-bgColor: var(--color-page-header-bg);
+    --control-transparent-bgColor-hover: var(--color-action-list-item-default-hover-bg);
+    --bgColor-inset: var(--color-canvas-inset);
+    --bgColor-severe-muted: var(--color-severe-subtle);
+    --bgColor-severe-emphasis: var(--color-severe-emphasis);
+    --bgColor-done-muted: var(--color-done-subtle);
+    --header-bgColor: var(--color-header-bg);
+    --headerSearch-borderColor: var(--color-header-search-border);
+    --headerSearch-bgColor: var(--color-header-search-bg);
+    --header-fgColor-logo: var(--color-header-logo);
+    --header-fgColor-default: var(--color-header-text);
+    --control-transparent-bgColor-active: var(--color-action-list-item-default-active-bg);
+    --control-transparent-bgColor-selected: var(--color-action-list-item-default-selected-bg);
+    --fgColor-disabled: var(--color-primer-fg-disabled);
+    --control-danger-bgColor-hover: var(--color-action-list-item-danger-hover-bg);
+    --control-danger-fgColor-hover: var(--color-action-list-item-danger-hover-text);
+    --control-danger-bgColor-active: var(--color-action-list-item-danger-active-bg);
+    --bgColor-done-emphasis: var(--color-done-emphasis);
+    --bgColor-accent-muted: var(--color-accent-muted);
+    --selection-bgColor: var(--color-accent-muted);
+    --diffBlob-hunk-bgColor-num: var(--color-diff-blob-hunk-num-bg);
+    --diffBlob-expander-iconColor: var(--color-diff-blob-expander-icon);
+    --diffBlob-addition-bgColor-line: var(--color-diff-blob-addition-line-bg);
+    --diffBlob-addition-fgColor-text: var(--color-diff-blob-addition-fg);
+    --diffBlob-addition-bgColor-word: var(--color-diff-blob-addition-word-bg);
+    --diffBlob-addition-fgColor-num: var(--color-diff-blob-addition-num-text);
+    --diffBlob-addition-bgColor-num: var(--color-diff-blob-addition-num-bg);
+    --diffBlob-deletion-bgColor-line: var(--color-diff-blob-deletion-line-bg);
+    --diffBlob-deletion-fgColor-text: var(--color-diff-blob-deletion-fg);
+    --diffBlob-deletion-bgColor-word: var(--color-diff-blob-deletion-word-bg);
+    --diffBlob-deletion-fgColor-num: var(--color-diff-blob-deletion-num-text);
+    --diffBlob-deletion-bgColor-num: var(--color-diff-blob-deletion-num-bg);
+    --borderColor-accent-muted: var(--color-accent-muted);
+    --timelineBadge-bgColor: var(--color-timeline-badge-bg);
+    --borderColor-success-muted: var(--color-success-muted);
+    --borderColor-danger-muted: var(--color-danger-muted);
+    --button-default-borderColor-hover: var(--color-btn-hover-border);
+    --borderColor-neutral-emphasis: var(--color-fg-subtle);
+    --shadow-floating-small: var(--color-overlay-shadow);
+    --shadow-resting-small: var(--color-shadow-small);
+    --control-borderColor-rest: var(--color-border-default);
+    --highlight-neutral-bgColor: var(--color-search-keyword-hl);
+    --bgColor-success-muted: var(--color-success-muted);
+    --bgColor-danger-muted: var(--color-danger-muted);
+    --header-borderColor-divider: var(--color-header-divider);
+    --button-primary-bgColor-rest: var(--color-btn-primary-bg);
+    --control-bgColor-hover: var(--color-btn-hover-bg);
+    --overlay-backdrop-bgColor: var(--color-neutral-muted);
+    --buttonCounter-default-bgColor-rest: var(--color-btn-counter-bg);
+    --button-default-fgColor-rest: var(--color-btn-text);
+    --button-default-bgColor-rest: var(--color-btn-bg);
+    --button-default-borderColor-rest: var(--color-btn-border);
+    --button-default-shadow-resting: var(--color-btn-shadow);
+    --button-default-shadow-inset: var(--color-btn-inset-shadow);
+    --button-default-bgColor-active: var(--color-btn-active-bg);
+    --button-default-borderColor-active: var(--color-btn-active-border);
+    --button-default-bgColor-selected: var(--color-btn-selected-bg);
+    --shadow-inset: var(--color-primer-shadow-inset);
+    --button-primary-fgColor-rest: var(--color-btn-primary-text);
+    --button-primary-borderColor-rest: var(--color-btn-primary-border);
+    --shadow-highlight: var(--color-btn-primary-inset-shadow);
+    --button-primary-bgColor-hover: var(--color-btn-primary-hover-bg);
+    --button-primary-borderColor-hover: var(--color-btn-primary-hover-border);
+    --button-primary-bgColor-active: var(--color-btn-primary-selected-bg);
+    --button-primary-shadow-selected: var(--color-btn-primary-selected-shadow);
+    --button-primary-fgColor-disabled: var(--color-btn-primary-disabled-text);
+    --button-primary-bgColor-disabled: var(--color-btn-primary-disabled-bg);
+    --button-primary-borderColor-disabled: var(--color-btn-primary-disabled-border);
+    --buttonCounter-primary-bgColor-rest: var(--color-btn-primary-counter-bg);
+    --button-primary-iconColor-rest: var(--color-btn-primary-icon);
+    --button-outline-fgColor-rest: var(--color-btn-outline-text);
+    --button-outline-fgColor-hover: var(--color-btn-outline-hover-text);
+    --button-outline-bgColor-hover: var(--color-btn-outline-hover-bg);
+    --button-outline-borderColor-hover: var(--color-btn-outline-hover-border);
+    --buttonCounter-outline-bgColor-hover: var(--color-btn-outline-hover-counter-bg);
+    --button-outline-fgColor-active: var(--color-btn-outline-selected-text);
+    --button-outline-bgColor-active: var(--color-btn-outline-selected-bg);
+    --button-outline-borderColor-active: var(--color-btn-outline-selected-border);
+    --button-outline-shadow-selected: var(--color-btn-outline-selected-shadow);
+    --button-outline-fgColor-disabled: var(--color-btn-outline-disabled-text);
+    --button-outline-bgColor-disabled: var(--color-btn-outline-disabled-bg);
+    --buttonCounter-outline-bgColor-disabled: var(--color-btn-outline-disabled-counter-bg);
+    --buttonCounter-outline-bgColor-rest: var(--color-btn-outline-counter-bg);
+    --button-danger-fgColor-rest: var(--color-btn-danger-text);
+    --button-danger-iconColor-rest: var(--color-btn-danger-icon);
+    --button-danger-fgColor-hover: var(--color-btn-danger-hover-text);
+    --button-danger-bgColor-hover: var(--color-btn-danger-hover-bg);
+    --button-danger-borderColor-hover: var(--color-btn-danger-hover-border);
+    --buttonCounter-danger-bgColor-hover: var(--color-btn-danger-hover-counter-bg);
+    --button-danger-iconColor-hover: var(--color-btn-danger-hover-icon);
+    --button-danger-fgColor-active: var(--color-btn-danger-selected-text);
+    --button-danger-bgColor-active: var(--color-btn-danger-selected-bg);
+    --button-danger-borderColor-active: var(--color-btn-danger-selected-border);
+    --button-danger-shadow-selected: var(--color-btn-danger-selected-shadow);
+    --button-danger-fgColor-disabled: var(--color-btn-danger-disabled-text);
+    --button-danger-bgColor-disabled: var(--color-btn-danger-disabled-bg);
+    --buttonCounter-danger-bgColor-disabled: var(--color-btn-danger-disabled-counter-bg);
+    --buttonCounter-danger-bgColor-rest: var(--color-btn-danger-counter-bg);
+    --control-fgColor-disabled: var(--color-primer-fg-disabled);
+    --control-bgColor-disabled: var(--color-input-disabled-bg);
+    --control-borderColor-disabled: var(--color-border-default);
+    --sideNav-bgColor-selected: var(--color-sidenav-selected-bg);
+    --underlineNav-borderColor-active: var(--color-primer-border-active);
+    --shadow-floating-large: var(--color-shadow-large);
+    --shadow-floating-xlarge: var(--color-shadow-extra-large);
+    --bgColor-sponsors-muted: var(--color-sponsors-subtle);
+    --bgColor-sponsors-emphasis: var(--color-sponsors-emphasis);
+    --borderColor-severe-muted: var(--color-severe-muted);
+    --borderColor-done-muted: var(--color-done-muted);
+    --borderColor-sponsors-muted: var(--color-sponsors-muted);
+    --avatar-shadow: var(--color-avatar-child-shadow);
+    --selectMenu-borderColor: var(--color-select-menu-backdrop-border);
+    --shadow-floating-legacy: var(--color-overlay-shadow);
+    --selectMenu-bgColor-active: var(--color-select-menu-tap-focus-bg);
+    --control-bgColor-active: var(--color-select-menu-tap-highlight);
+    --control-danger-fgColor-rest: var(--color-danger-fg);
+    --control-borderColor-danger: var(--color-danger-emphasis);
+    --control-borderColor-success: var(--color-success-emphasis);
+    --control-fgColor-placeholder: var(--color-fg-subtle);
+    --control-borderColor-warning: var(--color-attention-emphasis);
+    --control-checked-borderColor-rest: var(--color-accent-fg);
+    --menu-bgColor-active: var(--color-menu-bg-active);
+    --avatar-bgColor: var(--color-avatar-bg);
+    --avatar-borderColor: var(--color-avatar-border);
+    --avatarStack-fade-bgColor-muted: var(--color-avatar-stack-fade-more);
+    --avatarStack-fade-bgColor-default: var(--color-avatar-stack-fade);
+    --button-default-bgColor-disabled: var(--color-btn-bg);
+    --button-default-borderColor-disabled: var(--color-btn-border);
+    --button-invisible-iconColor-rest: var(--color-fg-muted);
+    --button-invisible-bgColor-active: var(--color-action-list-item-default-active-bg);
+    --button-invisible-bgColor-disabled: var(--color-action-list-item-default-selected-bg);
+    --button-invisible-borderColor-disabled: var(--color-action-list-item-default-selected-bg);
+    --button-invisible-fgColor-disabled: var(--color-primer-fg-disabled);
+    --button-invisible-fgColor-rest: var(--color-btn-outline-text);
+    --fgColor-link: var(--color-accent-fg);
+    --button-danger-bgColor-rest: var(--color-btn-bg);
+    --button-danger-borderColor-rest: var(--color-btn-border);
+    --counter-borderColor: var(--color-counter-border);
   }
 
   .TimelineItem-badge {
