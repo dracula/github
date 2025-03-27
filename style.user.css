@@ -3,7 +3,7 @@
 @namespace https://github.com/Dracula
 @homepageURL https://github.com/Dracula/github
 @supportURL https://github.com/Dracula/github/issues
-@version 1.1.7
+@version 1.1.8
 @updateURL https://github.com/Dracula/github/raw/master/style.user.css
 @description  🧛🏻‍♂️ Dark theme for Github
 @author Umbreon
@@ -478,11 +478,11 @@ background-color: draculaW-blackSecondary
     --color-scale-coral-8: #640d04;
     --color-scale-coral-9: #460701;
     if contributor-graph-colors {
-      --color-calendar-graph-day-bg: #44475a;
-      --color-calendar-graph-day-L1-bg: #6272a4;
-      --color-calendar-graph-day-L2-bg: #8be9fd;
-      --color-calendar-graph-day-L3-bg: #bd93f9;
-      --color-calendar-graph-day-L4-bg: #ff79c6;
+      --contribution-default-bgColor-0: #44475a;
+      --contribution-default-bgColor-1: #6272a4;
+      --contribution-default-bgColor-2: #8be9fd;
+      --contribution-default-bgColor-3: #bd93f9;
+      --contribution-default-bgColor-4: #ff79c6;
     }
 
     /*
