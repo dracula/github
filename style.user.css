@@ -3,7 +3,7 @@
 @namespace https://github.com/Dracula
 @homepageURL https://github.com/Dracula/github
 @supportURL https://github.com/Dracula/github/issues
-@version 1.1.6
+@version 1.1.7
 @updateURL https://github.com/Dracula/github/raw/master/style.user.css
 @description  🧛🏻‍♂️ Dark theme for Github
 @author Umbreon
@@ -179,10 +179,11 @@ background-color: draculaW-blackSecondary
     --color-mktg-btn-bg: #f6f8fa;
     --color-mktg-btn-shadow-outline: rgb(255 255 255 / 25%) 0 0 0 1px inset;
     --color-mktg-btn-shadow-focus: rgb(255 255 255 / 25%) 0 0 0 4px;
-    --color-mktg-btn-shadow-hover: 0 4px 7px rgba(0, 0, 0, 0.15),
-      0 100px 80px rgba(255, 255, 255, 0.02), 0 42px 33px rgba(255, 255, 255, 0.024),
-      0 22px 18px rgba(255, 255, 255, 0.028), 0 12px 10px rgba(255, 255, 255, 0.034),
-      0 7px 5px rgba(255, 255, 255, 0.04), 0 3px 2px rgba(255, 255, 255, 0.07);
+    --color-mktg-btn-shadow-hover:
+      0 4px 7px rgba(0, 0, 0, 0.15), 0 100px 80px rgba(255, 255, 255, 0.02),
+      0 42px 33px rgba(255, 255, 255, 0.024), 0 22px 18px rgba(255, 255, 255, 0.028),
+      0 12px 10px rgba(255, 255, 255, 0.034), 0 7px 5px rgba(255, 255, 255, 0.04),
+      0 3px 2px rgba(255, 255, 255, 0.07);
     --color-mktg-btn-shadow-hover-muted: rgb(255 255 255) 0 0 0 2px inset;
     --color-avatar-bg: rgba(240, 246, 252, 0.1);
     --color-avatar-border: rgba(240, 246, 252, 0.1);
@@ -735,6 +736,143 @@ background-color: draculaW-blackSecondary
   /* Fix the background behind some buttons */
   .color-bg-subtle.ml-1 {
     background-color: transparent !important;
+  }
+
+  /* GitHub Actions log colors */
+  .CheckStep .ansifg-b {
+    color: var(--color-ansi-black);
+  }
+
+  .CheckStep .ansifg-r {
+    color: var(--color-ansi-red);
+  }
+
+  .CheckStep .ansifg-g {
+    color: var(--color-ansi-green);
+  }
+
+  .CheckStep .ansifg-y {
+    color: var(--color-ansi-yellow);
+  }
+
+  .CheckStep .ansifg-bl {
+    color: var(--color-ansi-blue);
+  }
+
+  .CheckStep .ansifg-m {
+    color: var(--color-ansi-magenta);
+  }
+
+  .CheckStep .ansifg-c {
+    color: var(--color-ansi-cyan);
+  }
+
+  .CheckStep .ansifg-w {
+    color: var(--color-ansi-white);
+  }
+
+  .CheckStep .ansifg-gr {
+    color: var(--color-ansi-gray);
+  }
+
+  .CheckStep .ansifg-b-br {
+    color: var(--color-ansi-black-bright);
+  }
+
+  .CheckStep .ansifg-r-br {
+    color: var(--color-ansi-red-bright);
+  }
+
+  .CheckStep .ansifg-g-br {
+    color: var(--color-ansi-green-bright);
+  }
+
+  .CheckStep .ansifg-y-br {
+    color: var(--color-ansi-yellow-bright);
+  }
+
+  .CheckStep .ansifg-bl-br {
+    color: var(--color-ansi-blue-bright);
+  }
+
+  .CheckStep .ansifg-m-br {
+    color: var(--color-ansi-magenta-bright);
+  }
+
+  .CheckStep .ansifg-c-br {
+    color: var(--color-ansi-cyan-bright);
+  }
+
+  .CheckStep .ansifg-w-br {
+    color: var(--color-ansi-white-bright);
+  }
+
+  .CheckStep .ansibg-b {
+    background-color: var(--color-ansi-black);
+  }
+
+  .CheckStep .ansibg-r {
+    background-color: var(--color-ansi-red);
+  }
+
+  .CheckStep .ansibg-g {
+    background-color: var(--color-ansi-green);
+  }
+
+  .CheckStep .ansibg-y {
+    background-color: var(--color-ansi-yellow);
+  }
+
+  .CheckStep .ansibg-bl {
+    background-color: var(--color-ansi-blue);
+  }
+
+  .CheckStep .ansibg-m {
+    background-color: var(--color-ansi-magenta);
+  }
+
+  .CheckStep .ansibg-c {
+    background-color: var(--color-ansi-cyan);
+  }
+
+  .CheckStep .ansibg-w {
+    background-color: var(--color-ansi-white);
+  }
+
+  .CheckStep .ansibg-gr {
+    background-color: var(--color-ansi-gray);
+  }
+
+  .CheckStep .ansibg-b-br {
+    background-color: var(--color-ansi-black-bright);
+  }
+
+  .CheckStep .ansibg-r-br {
+    background-color: var(--color-ansi-red-bright);
+  }
+
+  .CheckStep .ansibg-g-br {
+    background-color: var(--color-ansi-green-bright);
+  }
+
+  .CheckStep .ansibg-y-br {
+    background-color: var(--color-ansi-yellow-bright);
+  }
+
+  .CheckStep .ansibg-bl-br {
+    background-color: var(--color-ansi-blue-bright);
+  }
+
+  .CheckStep .ansibg-m-br {
+    background-color: var(--color-ansi-magenta-bright);
+  }
+
+  .CheckStep .ansibg-c-br {
+    background-color: var(--color-ansi-cyan-bright);
+  }
+
+  .CheckStep .ansibg-w-br {
+    background-color: var(--color-ansi-white);
   }
 
   /* Improve labels when colored status is enabled */
