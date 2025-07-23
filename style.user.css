@@ -723,7 +723,7 @@ background-color: draculaW-blackSecondary
   
   /* Color the topbar */
   .AppHeader {
-      background-color: var(--color-header-bg);
+      background-color: var(--color-header-bg) !important;
   }
   
   /* Color the logo */
