@@ -684,6 +684,7 @@ background-color: draculaW-blackSecondary
     --button-danger-bgColor-rest: var(--color-btn-bg);
     --button-danger-borderColor-rest: var(--color-btn-border);
     --counter-borderColor: var(--color-counter-border);
+    --bgColor-inset: var(--color-header-bg)
   }
 
   .TimelineItem-badge {
@@ -720,11 +721,11 @@ background-color: draculaW-blackSecondary
       font-family: custom-font;
     }
   }
-
+  
   /* Color the logo */
   .octicon-mark-github {
     if purple-logo {
-      color: #bd93f9;
+      color: #bd93f9 !important;
     }
   }
 
