@@ -684,7 +684,6 @@ background-color: draculaW-blackSecondary
     --button-danger-bgColor-rest: var(--color-btn-bg);
     --button-danger-borderColor-rest: var(--color-btn-border);
     --counter-borderColor: var(--color-counter-border);
-    --bgColor-inset: var(--color-header-bg)
   }
 
   .TimelineItem-badge {
@@ -720,6 +719,11 @@ background-color: draculaW-blackSecondary
     if custom-font-enabled {
       font-family: custom-font;
     }
+  }
+  
+  /* Color the topbar */
+  .AppHeader {
+      background-color: var(--color-header-bg);
   }
   
   /* Color the logo */
